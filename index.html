@@ -758,7 +758,7 @@
     </div>
     <div class="topbar-right">
       <div class="clock-badge" id="clockBadge">--:-- --</div>
-      <div class="avatar">AK</div>
+      <div class="avatar">SQ</div>
     </div>
   </header>
 
@@ -768,7 +768,7 @@
     <!-- GREETING -->
     <div class="greeting-row">
       <div class="greeting">
-        <h2 id="greetingText">Good morning, Aditya 👋</h2>
+        <h2 id="greetingText">Good afternoon, Sharique 👋</h2>
         <div class="sub" id="dateStr">Loading date...</div>
       </div>
       <div class="quote-box" id="quoteBox">
@@ -925,7 +925,7 @@
   function updateGreeting() {
     const h = new Date().getHours();
     const greet = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
-    document.getElementById('greetingText').textContent = `${greet}, Aditya 👋`;
+    document.getElementById('greetingText').textContent = `${greet}, Sharique 👋`;
     const now = new Date();
     document.getElementById('dateStr').textContent = now.toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
   }
